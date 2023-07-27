@@ -1,0 +1,37 @@
+.formjob-wrapper {
+  position: absolute;
+}
+
+.form-job {
+  background-color: #fff;
+
+  padding: 16px;
+  display: inline-flex;
+  gap: 16px;
+}
+
+.form-field {
+  display: inline-flex;
+  gap: 18px;
+}
+
+.form-field img {
+  width: 20px;
+  height: 20px;
+}
+
+.form-field .input-custom {
+  border: none;
+  width: 300px;
+  border-bottom: 1px solid #d6dded;
+}
+
+.button-search {
+  padding: 14px 40px;
+  font-weight: 700;
+}
+
+.form-job-description {
+  color: #202430;
+  margin-top: 16px;
+}

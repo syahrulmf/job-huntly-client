@@ -1,0 +1,21 @@
+.testimoni-wrapper {
+  margin: 125px 0;
+}
+
+.text-info {
+  font-size: 18px;
+  color: #515b6f;
+  margin-bottom: 32px;
+}
+
+.list-testimoni {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-testimoni img {
+  /* width: 140px; */
+  height: 40px;
+  aspect-ratio: auto;
+}

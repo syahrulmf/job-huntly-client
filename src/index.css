@@ -5,3 +5,14 @@ body {
   padding: 0 124px;
   font-family: "Epilogue", sans-serif;
 }
+
+.bg-landingpage {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #f8f8fd;
+  z-index: -1;
+}

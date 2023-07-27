@@ -1,0 +1,36 @@
+.navbar-wrapper {
+  padding: 32px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-img {
+  width: 160px;
+  height: 36px;
+}
+
+.nav-logo-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 48px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #515b6f;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.auth {
+  display: inline-flex;
+  gap: 16px;
+}
+
+.auth .btn-link {
+  font-weight: 500;
+  color: #4640de;
+}
