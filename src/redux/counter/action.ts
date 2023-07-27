@@ -1,17 +1,13 @@
-import { AppDispatch } from "..";
+import { TypedDispatch } from "..";
 
-export const incrementCounter =
-  () =>
-  async (dispatch: AppDispatch): Promise<void> => {
-    dispatch({
-      type: "increment",
-    });
-  };
+export const incrementCounter = () => async (dispatch: TypedDispatch) => {
+  dispatch({
+    type: "increment",
+  });
+};
 
-export const decrementCounter =
-  () =>
-  async (dispatch: AppDispatch): Promise<void> => {
-    dispatch({
-      type: "decrement",
-    });
-  };
+export const decrementCounter = () => async (dispatch: TypedDispatch) => {
+  dispatch({
+    type: "decrement",
+  });
+};
