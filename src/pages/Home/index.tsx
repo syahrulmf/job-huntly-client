@@ -1,13 +1,19 @@
+import { useEffect } from "react";
 import { useTypedDispatch, useTypedSelector } from "../../redux/app/hooks";
 import { decrementCounter, incrementCounter } from "../../redux/counter/action";
 
+import { getCategories } from "../../redux/category/action";
 import "./style.css";
 
 export default function Home() {
   const { counter } = useTypedSelector((state) => state.counter);
+  const category = useTypedSelector((state) => state.category);
   const dispatch = useTypedDispatch();
 
-  console.log(counter);
+  useEffect(() => {
+    dispatch(getCategories());
+    console.log(category.categories);
+  }, []);
 
   const handleIncrement = () => {
     dispatch(incrementCounter());
