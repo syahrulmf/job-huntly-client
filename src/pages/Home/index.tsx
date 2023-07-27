@@ -1,4 +1,4 @@
-import { useTypedDispatch, useTypedSelector } from "../../redux";
+import { useTypedDispatch, useTypedSelector } from "../../redux/app/hooks";
 import { decrementCounter, incrementCounter } from "../../redux/counter/action";
 
 import "./style.css";
