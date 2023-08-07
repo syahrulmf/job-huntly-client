@@ -1,0 +1,63 @@
+.job-wrapper {
+  padding: 72px 0;
+  margin-top: 72px;
+}
+
+.job-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.latest-job-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 28px;
+  gap: 18px;
+  border: 1px solid #d6ddeb;
+  cursor: pointer;
+}
+
+.latest-job-item .logo img {
+  width: 64px;
+}
+
+.latest-job-item .name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.latest-job-item .location {
+  color: #515b6f;
+  margin: 6px 0;
+  margin-bottom: 20px;
+}
+
+.latest-job-item .tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.latest-job-item .type {
+  border-right: 1px solid #d6ddeb;
+  padding-right: 8px;
+}
+
+.latest-job-item .type span {
+  color: #56cdad;
+  background-color: #56cdad1a;
+  padding: 8px;
+  border-radius: 80px;
+}
+
+.latest-job-item .tag .category {
+  color: #ffb836;
+  padding: 8px;
+  border: 1px solid #ffb836;
+  margin-right: 2px;
+  border-radius: 80px;
+}

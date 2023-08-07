@@ -1,3 +1,4 @@
+import Footer from "../../organism/Footer";
 import Navbar from "../../organism/Navbar";
 
 export default function HomeTemplate({ children }: any) {
@@ -5,7 +6,10 @@ export default function HomeTemplate({ children }: any) {
     <div>
       <div className="bg-landingpage"></div>
       <Navbar />
-      <div id="content">{children}</div>
+      <div id="content" style={{ padding: "0 124px" }}>
+        {children}
+      </div>
+      <Footer />
     </div>
   );
 }
