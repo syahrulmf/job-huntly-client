@@ -1,11 +1,11 @@
 import { useEffect } from "react";
-import { BsArrowRight } from "react-icons/bs";
 
 import { useTypedDispatch, useTypedSelector } from "../../../redux/app/hooks";
 import { getCategories } from "../../../redux/category/action";
 
 import CategoryItem from "./CategoryItem";
 
+import ContentHeader from "../../atoms/ContentHeader";
 import "./style.css";
 
 const categories = [
@@ -37,14 +37,7 @@ export default function Category() {
 
   return (
     <div className="category-wrapper">
-      <div className="category-header">
-        <div className="title">
-          Explore by <span>category</span>
-        </div>
-        <div className="btn-detail">
-          Show all jobs <BsArrowRight />
-        </div>
-      </div>
+      <ContentHeader word1="Explore by" word2="category" />
       <div className="category-content">
         {categories.map((item, i) => (
           <CategoryItem name={item.name} totalJobs={item.totalJobs} key={i} />
