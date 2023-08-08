@@ -35,12 +35,12 @@
   margin-bottom: 32px;
 }
 
-.form-field {
+.form-field2 {
   display: block;
   margin-bottom: 22px;
 }
 
-.form-field label {
+.form-field2 label {
   display: block;
   font-weight: 600;
   font-size: 14px;
@@ -48,7 +48,7 @@
   margin-bottom: 10px;
 }
 
-.form-field .input-custom2 {
+.form-field2 .input-custom2 {
   margin: 5px 0;
   border-radius: 0;
   font-size: 14px;

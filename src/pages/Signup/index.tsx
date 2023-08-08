@@ -28,7 +28,7 @@ export default function Signup() {
         <div className="form-wrapper-inner">
           <h2>Sign Up</h2>
           <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="form-field">
+            <div className="form-field2">
               <label htmlFor="name">Full Name</label>
               <input
                 type="text"
@@ -41,7 +41,7 @@ export default function Signup() {
                 <span className="error">This field is required</span>
               )}
             </div>
-            <div className="form-field">
+            <div className="form-field2">
               <label htmlFor="email">Email</label>
               <input
                 type="email"
@@ -54,7 +54,7 @@ export default function Signup() {
                 <span className="error">This field is required</span>
               )}
             </div>
-            <div className="form-field">
+            <div className="form-field2">
               <label htmlFor="password">Password</label>
               <input
                 type="password"
