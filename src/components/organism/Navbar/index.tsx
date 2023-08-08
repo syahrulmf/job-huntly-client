@@ -1,9 +1,13 @@
 import { Button } from "antd";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
+import { useTypedSelector } from "../../../redux/app/hooks";
 import "./style.css";
 
 export default function Navbar() {
+  const navigate = useNavigate();
+  const { user } = useTypedSelector((state) => state.auth);
+
   return (
     <div className="navbar-wrapper">
       <div className="nav-logo-link">
@@ -21,12 +25,22 @@ export default function Navbar() {
           </Link>
         </div>
       </div>
-      <div className="auth">
-        <Button className="btn-link" type="link">
-          Login
-        </Button>
-        <Button type="primary">Sign Up</Button>
-      </div>
+      {user ? (
+        <div className="username">Hai, {user.name}</div>
+      ) : (
+        <div className="auth">
+          <Button
+            onClick={() => navigate("/signin")}
+            className="btn-link"
+            type="link"
+          >
+            Login
+          </Button>
+          <Button onClick={() => navigate("/signup")} type="primary">
+            Sign Up
+          </Button>
+        </div>
+      )}
     </div>
   );
 }

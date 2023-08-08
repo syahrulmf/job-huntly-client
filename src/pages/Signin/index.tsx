@@ -1,6 +1,9 @@
 import { Button } from "antd";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
+
+import { useTypedDispatch, useTypedSelector } from "../../redux/app/hooks";
+import { postSingin } from "../../redux/auth/action";
 
 import "./style.css";
 
@@ -16,7 +19,22 @@ export default function Signin() {
     formState: { errors },
   } = useForm<Inputs>();
 
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
+  const { user } = useTypedSelector((state) => state.auth);
+  const dispatch = useTypedDispatch();
+  const navigate = useNavigate();
+
+  const onSubmit: SubmitHandler<Inputs> = async (data) => {
+    console.log(data);
+    await dispatch(postSingin(data));
+
+    if (user) {
+      navigate("/");
+    }
+  };
+
+  if (user) {
+    return <Navigate to={"/"} replace />;
+  }
 
   return (
     <div className="signin-wrapper">
