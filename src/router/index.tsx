@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 
+import DetailJob from "../pages/DetailJob";
 import FindJobs from "../pages/FindJobs";
 import Home from "../pages/Home";
 import Signin from "../pages/Signin";
@@ -11,15 +12,19 @@ export const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/find-jobs",
+    path: "find-jobs",
     element: <FindJobs />,
   },
   {
-    path: "/signin",
+    path: "signin",
     element: <Signin />,
   },
   {
-    path: "/signup",
+    path: "signup",
     element: <Signup />,
+  },
+  {
+    path: "job/detail/:id",
+    element: <DetailJob />,
   },
 ]);

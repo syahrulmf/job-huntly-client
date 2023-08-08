@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 type Props = {
   jobType: string;
   name: string;
@@ -15,8 +17,10 @@ export default function JobItem({
   description,
   categories = ["Marketing", "Design"],
 }: Props) {
+  const navigate = useNavigate();
+
   return (
-    <div className="featured-item">
+    <div className="featured-item" onClick={() => navigate("/job/detail/1")}>
       <div className="logo-tag">
         <img src="/images/company-1.png" alt="/images/company-1.png" />
         <span className="tag">{jobType}</span>

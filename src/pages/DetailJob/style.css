@@ -1,0 +1,132 @@
+.section-detail {
+  padding: 40px 0px;
+  width: 100%;
+}
+
+.list-nav {
+  font-size: 14px;
+  color: #515b6f;
+}
+
+.list-nav .job-name {
+  color: #202430;
+}
+
+.section-card-job {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 16px;
+  margin-top: 40px;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.section-card-job .detail {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.section-card-job img {
+  width: 88px;
+  height: 88px;
+}
+
+.section-card-job .job {
+  font-size: 32px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.section-card-job .location-job {
+  color: #515b6f;
+}
+
+.section-card-job .btn-apply {
+  border-radius: 0;
+  width: 150px;
+  font-weight: 600;
+}
+
+.section-more-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.section-more-detail .side-1 {
+  width: 70%;
+}
+
+.section-more-detail .side-2 {
+  width: 30%;
+}
+
+.section-more-detail .more-detail {
+  margin-bottom: 40px;
+}
+
+.more-detail .title,
+.content-detail .title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.more-detail .description p {
+  color: #515b6f;
+  line-height: 25px;
+}
+
+.content-detail {
+  margin-bottom: 40px;
+}
+
+.content-detail .progress {
+  background-color: #f8f8fd;
+  padding: 14px;
+  margin-bottom: 23px;
+}
+
+.content-detail .progress-bar {
+  margin: 0;
+}
+
+.content-detail .progress .info {
+  margin-bottom: 8px;
+}
+
+.content-detail .progress .info {
+  color: #25324b;
+}
+
+.content-detail .progress .info span {
+  color: #7c8493;
+}
+
+.content-detail .label-value {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+
+.content-detail .label-value span:first-child {
+  color: #515b6f;
+}
+
+.content-detail .label-value span:last-child {
+  color: #25324b;
+  font-weight: 600;
+}
+
+.content-detail .categories {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  /* margin-top: 15px; */
+  margin-bottom: 40px;
+}

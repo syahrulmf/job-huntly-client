@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 type Props = {
   name: string;
   location: string;
@@ -15,8 +17,9 @@ export default function LatestJobItem({
   categories,
   image,
 }: Props) {
+  const navigate = useNavigate();
   return (
-    <div className="latest-job-item">
+    <div className="latest-job-item" onClick={() => navigate("/job/detail/1")}>
       <div className="logo">
         <img src={image} alt={image} />
       </div>

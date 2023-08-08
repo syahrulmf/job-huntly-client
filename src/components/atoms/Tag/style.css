@@ -1,0 +1,21 @@
+.tag {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 80px;
+}
+
+.primary {
+  color: #4640de;
+  background-color: #f8f8fd;
+}
+
+.success {
+  color: #56cdad;
+  background-color: #56cdad1a;
+}
+
+.warning {
+  color: #ffb836;
+  background-color: #eb85331a;
+}
