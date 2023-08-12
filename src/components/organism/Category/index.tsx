@@ -3,9 +3,9 @@ import { useEffect } from "react";
 import { useTypedDispatch, useTypedSelector } from "../../../redux/app/hooks";
 import { getCategories } from "../../../redux/category/action";
 
+import ContentHeader from "../../atoms/ContentHeader";
 import CategoryItem from "./CategoryItem";
 
-import ContentHeader from "../../atoms/ContentHeader";
 import "./style.css";
 
 const categories = [

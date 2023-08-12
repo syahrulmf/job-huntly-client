@@ -6,7 +6,7 @@ type Props = {
   type: string;
   location: string;
   description: string;
-  categories?: [string, string];
+  categories?: string[] | undefined;
 };
 
 export default function JobItem({
